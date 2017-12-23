@@ -61,7 +61,6 @@ public class Program {
                     }
                     c[b[a[i][j]]]++;
                 }
-
               b[a[i][j]]++;
             }
             if (t) System.out.println();
