@@ -26,13 +26,19 @@ public class Program {
             for (int j=0;j<q;j++)
             {
                 if (b[a[i][j]]==0)
-                { b[a[i][j]]++;
+                {
                  System.out.print(a[i][j]+" ");
                 }
-                else
-                {   count++;
-                    b[a[i][j]]++;
+                else if (b[a[i][j]]==1)
+                {
+                    count+=2;
+
                 }
+                else
+                {
+                    count++;
+                }
+                b[a[i][j]]++;
             }
             System.out.println("Count:"+count);
 
