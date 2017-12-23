@@ -55,11 +55,11 @@ public class Program {
             {
                 if (b[a[i][j]]!=0)
                 {
-                    if (c[b[a[i][j]]]==0)
+                    if (c[a[i][j]]==0)
                     {   t=true;
                         System.out.print(a[i][j]+" ");
                     }
-                    c[b[a[i][j]]]++;
+                    c[a[i][j]]++;
                 }
               b[a[i][j]]++;
             }
