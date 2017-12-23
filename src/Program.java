@@ -27,7 +27,7 @@ public class Program {
             {
                 if (b[a[i][j]]==0)
                 {
-                 System.out.print(a[i][j]+" ");
+                    System.out.print(a[i][j]+" ");
                 }
                 else if (b[a[i][j]]==1)
                 {
@@ -41,6 +41,31 @@ public class Program {
                 b[a[i][j]]++;
             }
             System.out.println("Count:"+count);
+
+
+        }
+        System.out.println("Result2: ");
+        int [] c = new int[21];
+        boolean t;
+        for (int i = 0;i<q;i++)
+        {   t= false;
+            for (int k=0;k<21;k++)
+                b[k]=0;
+            for (int j=0;j<q;j++)
+            {
+                if (b[a[i][j]]!=0)
+                {
+                    if (c[b[a[i][j]]]==0)
+                    {   t=true;
+                        System.out.print(a[i][j]+" ");
+                    }
+                    c[b[a[i][j]]]++;
+                }
+
+              b[a[i][j]]++;
+            }
+            if (t) System.out.println();
+
 
 
         }
